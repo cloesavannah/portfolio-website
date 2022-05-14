@@ -1,0 +1,35 @@
+:root {
+  --accent-color-dark: #F368A0;
+  --accent-color-light: #FFADB8;
+  --black-modified: #141414;
+  --accent-font: 'Roboto Mono', monospace;
+  --body-font: 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar {
+  height: 25vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav > ul {
+  font-family: var(--accent-font);
+  list-style: none;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.name-title {
+  color: var(--accent-color-dark);
+  font-size: 42px;
+}
