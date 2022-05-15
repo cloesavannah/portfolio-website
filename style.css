@@ -1,14 +1,99 @@
 :root {
   --accent-color-dark: #F368A0;
   --accent-color-light: #FFADB8;
+  --primary-color: #000;
+  --secondary-color: #fff;
   --black-modified: #141414;
   --accent-font: 'Roboto Mono', monospace;
   --body-font: 
 }
 
+body {
+  background-color: var(--secondary-color);
+  font-family: var(--accent-font);
+}
+
 * {
   margin: 0;
   padding: 0;
+}
+
+
+
+/* -------- Dark Mode Theme and button --------- */
+#dark-mode-button-space {
+  display: flex;
+  justify-content: end;
+  height: 25px;
+}
+
+#dark-mode-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--accent-font);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: solid 2px var(--accent-color-dark);
+  width: 100px;
+  border-radius: 8px;
+}
+
+#dark-mode-button:hover {
+  background-color: var(--accent-color-dark);
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+#dark-mode-button:active {
+  transform: translateY(4px);
+}
+
+/* --------- Dark Mode Theme Class ---------- */
+.dark-mode {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.dark-mode a {
+  color: #fff;
+}
+
+.dark-mode a:link {
+  color: #fff;
+}
+
+.dark-mode a:visited {
+  color: #fff; 
+}
+
+.dark-mode a:hover {
+  color: var(--accent-color-dark); 
+}
+
+.dark-mode button {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: solid 2px var(--accent-color-dark);
+}
+
+
+/* Links */
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: black;
+}
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: var(--accent-color-dark);
+  cursor: pointer;
 }
 
 .nav-bar {
@@ -33,3 +118,63 @@ nav > ul {
   color: var(--accent-color-dark);
   font-size: 42px;
 }
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+
+h3 {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contact Page */
+
+.contact-header {
+  display: flex;
+  justify-content: center;
+  margin: 5vh;
+}
+
+.contact-text {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* .contact-details-area {
+  width: 100vw;
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-header {
+  display: flex;
+  justify-content: center;
+  font-family: var(--accent-font);
+}
+
+.contact-details-paragraph {
+  display: flex;
+  justify-content: center;  
+} */
