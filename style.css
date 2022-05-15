@@ -11,6 +11,7 @@
 body {
   background-color: var(--secondary-color);
   font-family: var(--accent-font);
+  height: 100vh;
 }
 
 * {
@@ -119,24 +120,48 @@ nav > ul {
   font-size: 42px;
 }
 
-h1 {
+h1{
   display: flex;
   justify-content: center;
+  margin: 25px;
 }
 
 
-h3 {
+h2, h3, h4, h5, p {
   margin: 50px;
   display: flex;
   justify-content: center;
 }
 
-h4 {
+p {
+  line-height: 200%;
+}
+
+/* h4 {
   margin: 50px;
   display: flex;
   justify-content: center;
 }
 
+h5 {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+
+p {
+  display: flex;
+  justify-content: center;
+  margin: 25px;
+} */
+
+.line-break {
+  margin: 0 auto;
+  width: 80vw;
+  /* background-color: var(--accent-color-dark); */
+  border: 0.01px solid var(--accent-color-dark);
+}
 
 
 
@@ -166,21 +191,29 @@ h4 {
 }
 
 
+/* Footer */
 
-/* .contact-details-area {
+footer {
+  display: flex;
   width: 100vw;
-  height: 45vh;
-  display: flex;
-  justify-content: center;
+  height: 10vh;
+  position: sticky;
+  top: 100vh;
+  background: var(--primary-color);
 }
 
-.contact-header {
-  display: flex;
-  justify-content: center;
-  font-family: var(--accent-font);
+
+footer a:visited {
+  color: #fff;
+  text-decoration: none;
 }
 
-.contact-details-paragraph {
-  display: flex;
-  justify-content: center;  
-} */
+footer a:link {
+  color: #fff;
+}
+
+footer > ul {
+  list-style: none;
+  color: #fff;
+  margin: 10px;
+}
