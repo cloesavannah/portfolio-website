@@ -169,9 +169,29 @@ p {
   border: 0.01px solid var(--accent-color-dark);
 }
 
+/* About Page */
+
+/* .about-page-image {
+} */
 
 
+/* Music Page(s) */
 
+.score-embed {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  height: 60vh;
+  width: 40vw;  
+}
+
+.soundcloud-embed {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  height: 30vh;
+  width: 60vw;
+}
 
 
 
